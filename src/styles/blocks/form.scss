@@ -21,21 +21,19 @@
     @include formField;
 
     height: 120px;
-    resize: none;
 
     &:-webkit-autofill,
     &:-webkit-autofill:hover,
     &:-webkit-autofill:focus {
       background-color: $color-light-background;
     }
+  }
 
-    &__submit {
-      width: 100%;
-      margin-top: 16px;
+  &__submit {
+    width: 100%;
+    margin-top: 16px;
 
-      @include primaryButton;
-
-      cursor: pointer;
-    }
+    @include primaryButton;
+    cursor: pointer;
   }
 }
