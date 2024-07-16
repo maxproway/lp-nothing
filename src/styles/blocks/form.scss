@@ -9,19 +9,33 @@
     &:focus {
       border: 1px solid $main-text-color;
     }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus {
+      background-color: $color-light-background;
+    }
   }
 
   &__textarea {
     @include formField;
 
     height: 120px;
-  }
+    resize: none;
 
-  &__submit {
-    width: 100%;
-    margin-top: 16px;
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus {
+      background-color: $color-light-background;
+    }
 
-    @include primaryButton;
-    cursor: pointer;
+    &__submit {
+      width: 100%;
+      margin-top: 16px;
+
+      @include primaryButton;
+
+      cursor: pointer;
+    }
   }
 }
