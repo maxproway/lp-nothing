@@ -21,6 +21,7 @@
     @include formField;
 
     height: 120px;
+    resize: none;
 
     &:-webkit-autofill,
     &:-webkit-autofill:hover,
